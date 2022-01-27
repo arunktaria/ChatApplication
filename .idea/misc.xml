@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/drawable/borderline.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/drawable/btnbackgroumd.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/drawable/btnroundbackground.xml" value="0.13879598662207357" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/drawable/editextblackbackground.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/drawable/editextstrokebackground.xml" value="0.13879598662207357" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/drawable/editextwhitebackground.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/drawable/edittextbackground.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/drawable/ourlayoutbackground.xml" value="0.13879598662207357" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/drawable/roundedwhitebackground.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/drawable/sendlayoutbackground.xml" value="0.13879598662207357" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/layout/activity_chat_list_main.xml" value="0.2" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/layout/activity_login.xml" value="0.16" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/layout/activity_splash_screen.xml" value="0.12972972972972974" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/layout/activity_video_call_activitytemp.xml" value="0.23513513513513515" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/layout/chatlistitems.xml" value="0.2" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/layout/chatmainscreen.xml" value="0.2" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/layout/chatprofiletoolbar.xml" value="0.12972972972972974" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/layout/chatslayout.xml" value="0.12972972972972974" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/layout/messagelayout.xml" value="0.12972972972972974" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/layout/ourchatlayout.xml" value="0.12972972972972974" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/layout/progresslayout.xml" value="0.2" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/layout/senderlayout.xml" value="0.12972972972972974" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/layout/toolbarlayout.xml" value="0.2" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/layout/userslistlayout.xml" value="0.12972972972972974" />
+        <entry key="..\:/Users/Arun/Documents/FirebaseChatApplication/app/src/main/res/layout/videocalllayout.xml" value="0.14054054054054055" />
+        <entry key="..\:/Users/Arun/Downloads/FirebaseChatApplication/app/src/main/res/layout/activity_calling_screen.xml" value="0.125" />
+        <entry key="..\:/Users/Arun/Downloads/FirebaseChatApplication/app/src/main/res/layout/chatmainscreen.xml" value="0.23243243243243245" />
+        <entry key="..\:/Users/Arun/Downloads/FirebaseChatApplication/app/src/main/res/layout/chatprofiletoolbar.xml" value="0.23243243243243245" />
+        <entry key="..\:/Users/Arun/Downloads/FirebaseChatApplication/app/src/main/res/layout/userslistlayout.xml" value="0.23243243243243245" />
+        <entry key="..\:/Users/Arun/Downloads/FirebaseChatApplication/app/src/main/res/layout/videocalllayout.xml" value="0.23479729729729729" />
+        <entry key="..\:/Users/ArunKumar/Downloads/FirebaseChatApplication-master/app/src/main/res/layout/activity_audio_call.xml" value="0.1828125" />
+        <entry key="..\:/Users/ArunKumar/Downloads/FirebaseChatApplication-master/app/src/main/res/layout/activity_audio_call2.xml" value="0.1828125" />
+        <entry key="..\:/Users/ArunKumar/Downloads/FirebaseChatApplication-master/app/src/main/res/layout/activity_audio_call_pickedup.xml" value="0.33" />
+        <entry key="..\:/Users/ArunKumar/Downloads/FirebaseChatApplication-master/app/src/main/res/layout/activity_calling_screen.xml" value="0.1828125" />
+        <entry key="..\:/Users/ArunKumar/Downloads/FirebaseChatApplication-master/app/src/main/res/layout/activity_video_call_activitytemp.xml" value="0.1828125" />
+        <entry key="..\:/Users/ArunKumar/Downloads/FirebaseChatApplication-master/app/src/main/res/layout/chatmainscreen.xml" value="0.33" />
+        <entry key="..\:/Users/ArunKumar/Downloads/FirebaseChatApplication-master/app/src/main/res/layout/videocalllayout.xml" value="0.1828125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

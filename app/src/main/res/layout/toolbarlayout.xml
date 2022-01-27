@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/skyblue"
+    android:layout_height="?actionBarSize"
+    android:elevation="7sp"
+    android:outlineSpotShadowColor="@color/black"
+    >
+    <ImageView
+        android:layout_width="25sp"
+        android:layout_margin="16sp"
+        android:layout_height="25sp"
+        android:background="@drawable/messagewhiteimg"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:textSize="25sp"
+    android:text="Chats"
+
+    android:padding="10sp"
+    android:layout_weight="@integer/material_motion_duration_long_1"
+    android:textColor="@color/white"
+    android:fontFamily="sans-serif-light"
+    android:gravity="center_vertical"/>
+
+    <ImageView
+        android:layout_width="30sp"
+        android:layout_height="match_parent"
+        android:padding="2sp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10sp"
+        android:src="@drawable/searchimg"
+        />
+
+    <ImageView
+        android:layout_marginRight="10sp"
+        android:layout_width="35sp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:padding="2sp"
+        android:src="@drawable/vimg"/>
+
+</LinearLayout>

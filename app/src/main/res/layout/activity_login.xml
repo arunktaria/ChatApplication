@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="logins"
+            type="com.example.firebasechatapplication.ui.LoginActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.LoginActivity"
+        android:orientation="horizontal"
+
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.LoginActivity"
+        android:orientation="vertical"
+        android:padding="16sp"
+        android:id="@+id/btnlogin"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:background="@drawable/ic_outline_message_24"
+            android:layout_marginBottom="20sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:id="@+id/email"
+            android:hint="email"
+           android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:background="@drawable/edittextbackground"
+            android:padding="10sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_margin="16sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:id="@+id/password"
+            android:hint="password"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:background="@drawable/edittextbackground"
+            android:padding="10sp"
+            android:layout_margin="16sp"
+            android:fontFamily="sans-serif-light"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="forgot Password"
+            android:layout_gravity="right"
+            android:id="@+id/forgotpassword"
+            android:layout_margin="16sp"
+
+            android:fontFamily="sans-serif-light"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:background="@drawable/btnbackgroumd"
+            android:text="login"
+            android:id="@+id/login"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_margin="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Here.. SignUp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/SignUptextview"
+            android:layout_margin="16sp"
+
+            android:fontFamily="sans-serif-light"
+            />
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+</layout>

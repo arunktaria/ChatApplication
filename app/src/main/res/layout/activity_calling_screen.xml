@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".VideoCallingScreen"
+        android:background="@color/skyblue"
+        android:orientation="vertical"
+        android:weightSum="5"
+        >
+<com.google.android.material.imageview.ShapeableImageView
+    android:layout_width="150sp"
+    android:layout_height="150sp"
+    android:src="@drawable/dev"
+    app:shapeAppearanceOverlay="@style/roundedcorner"
+    android:scaleType="centerCrop"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="20sp"
+    android:id="@+id/callingimage"
+
+    />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="user"
+            android:id="@+id/callinguser"
+            android:textSize="35sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incoming..."
+            android:textSize="35sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16sp"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_weight="1"
+    android:layout_gravity="bottom"
+    >
+
+    <ImageView
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:id="@+id/callpick"
+        android:elevation="5sp"
+        android:background="@drawable/videocallimg"
+        />
+
+
+    <ImageView
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:id="@+id/endcall"
+        android:background="@drawable/endcallimg"
+        android:layout_marginLeft="50sp"
+        />
+
+
+</LinearLayout>
+    </LinearLayout>
+</layout>

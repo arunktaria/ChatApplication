@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="user"
+            type="com.example.firebasechatapplication.UserData" />
+        <variable
+            name="chatsuser"
+            type="com.example.firebasechatapplication.UserChatsModel" />
+
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@color/skyblue"
+    android:orientation="horizontal"
+    android:padding="8sp"
+    android:gravity="center_vertical"
+    >
+
+
+    <ImageView
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:id="@+id/backbtntoolitem"
+        android:background="@drawable/backbtnimg"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:id="@+id/profilephototoolitem"
+        app:shapeAppearanceOverlay="@style/roundedcorner"
+        android:src="@drawable/dev"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{user.username}"
+        android:id="@+id/usernametoolitem"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_weight="0.4"
+        android:layout_gravity="top"
+        android:layout_marginLeft="16sp"
+        />
+
+    <ImageView
+        android:id="@+id/voicecallbtn"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginRight="16sp"
+        android:background="@drawable/voicecallimg" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/videocallimgview"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_marginRight="16sp"
+            android:background="@drawable/videocallimg" />
+<ImageView
+    android:layout_width="15sp"
+    android:layout_height="15sp"
+    android:id="@+id/onlinegreen"
+    android:visibility="gone"
+    android:background="@drawable/onlinegreencircle"
+    android:layout_marginLeft="16sp"
+    android:padding="2sp"
+   />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10sp">
+
+
+        <ImageButton
+            android:id="@+id/fab"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btnbackgroumd"
+            android:clickable="true"
+            android:layout_margin="16sp"
+
+            android:src="@drawable/sendimg"
+            app:fabSize="mini"
+            tools:ignore="ContentDescription" />
+
+
+        <EditText
+            android:id="@+id/messageinput"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+
+            android:layout_toLeftOf="@id/fab"
+            android:background="@drawable/editextstrokebackground"
+            android:hint="Type Message..."
+
+            android:padding="10sp"
+
+            />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/messageinput"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="16dp"
+
+            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatrecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="16dp" />
+        </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+</layout>
