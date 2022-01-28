@@ -36,14 +36,37 @@ class AudioCallActivity : AppCompatActivity() {
         senderId=intent.getStringExtra("sender").toString()
         recieverId=intent.getStringExtra("reciever").toString()
 
+        val checkCalls = ViewModelProvider(this).get(CheckingCallsViewModel::class.java)
+        val checkcalls = ViewModelProvider(this).get(CheckingCallsViewModel::class.java)
+        val database= FirebaseDatabase.getInstance().reference
+
+
+
+
+        checkCalls.checkingCallConntion(database,senderId+recieverId)
+        checkCalls.tempcall.observe(this, Observer {
+            binding.conntextview.text=it.toString()
+
+
+        })
+
+
         binding.endcall.setOnClickListener {
             firebase.child("voicecall").child(senderId+recieverId).child("voicecall")
                 .setValue("inactive").addOnCompleteListener {
                     firebase.child("voicecall").child(  recieverId+senderId).child("voicecall")
-                        .setValue("inactive")
+                        .setValue("inactive").addOnCompleteListener {
+
+
+                            firebase.child("callconnect").child(senderId + recieverId).child("callconnect")
+                                .setValue("disconnected").addOnCompleteListener {
+                                    firebase.child("callconnect").child(recieverId+ senderId)
+                                        .child("callconnect")
+                                        .setValue("disconnected")
+                                }
+
+                        }
                 }
-
-
             finish()
 
         }
@@ -57,22 +80,17 @@ class AudioCallActivity : AppCompatActivity() {
        // initializeAndJoinChannel()
 
 
-        val checkcalls = ViewModelProvider(this).get(CheckingCallsViewModel::class.java)
-        val database= FirebaseDatabase.getInstance().reference
 
 
-        // var sen=intent.getStringExtra("reciever").toString()
-        // var rec=intent.getStringExtra("sender").toString()
-        checkcalls.checkourIncomingVideoCall(database,recieverId+senderId)
+        checkcalls.checkourIncomingVoiceCall(database,recieverId+senderId)
 
-         checkcalls.tempourstatus.observe(this, Observer {
-
-        /*    if(it.toString().equals("inactive"))
+         checkcalls.tempourvoicestatus.observe(this, Observer {
+             Log.d("TAG", "checking user call is ended "+it.toString())
+            if(it.toString().equals("inactive"))
             {
                 finish()
-
             }
-*/
+
             Log.d("TAG", "in calling endd "+it.toString())
         })
 
@@ -80,7 +98,29 @@ class AudioCallActivity : AppCompatActivity() {
     }
 
 
-  /*  // Kotlin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*
     private fun initializeAndJoinChannel() {
         try {
             mRtcEngine = RtcEngine.create(this, appId, mRtcEventHandler)

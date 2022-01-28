@@ -43,6 +43,7 @@
             android:layout_height="wrap_content"
             android:text="Incoming..."
             android:textSize="35sp"
+            android:id="@+id/audiocalluserclient"
             android:fontFamily="sans-serif-condensed-light"
             android:textColor="@color/white"
             android:layout_gravity="center_horizontal"

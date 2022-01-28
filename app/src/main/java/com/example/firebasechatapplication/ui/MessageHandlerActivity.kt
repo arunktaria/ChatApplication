@@ -156,12 +156,27 @@ class MessageHandlerActivity : AppCompatActivity() {
                 .addOnCompleteListener {
 
 
+                    messageourref.child("callconnect").child(senderId + recieverId).child("callconnect")
+                        .setValue("connecting...").addOnCompleteListener {
+                            messageourref.child("callconnect").child(recieverId+ senderId)
+                                .child("callconnect")
+                                .setValue("connecting...").addOnCompleteListener {
+
+                                    val intent=(Intent(MessageHandlerActivity@this,AudioCallActivity::class.java))
+                                    intent.putExtra("sender",senderId)
+                                    intent.putExtra("reciever",recieverId)
+                                    startActivity(intent)
+                                }
+
+
+                        }
+
+
+
+
                 }
 
-            val intent=(Intent(MessageHandlerActivity@this,AudioCallActivity::class.java))
-            intent.putExtra("sender",senderId)
-            intent.putExtra("reciever",recieverId)
-            startActivity(intent)
+
         }
 }
 

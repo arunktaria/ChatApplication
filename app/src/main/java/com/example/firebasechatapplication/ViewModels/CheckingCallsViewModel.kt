@@ -51,6 +51,25 @@ class CheckingCallsViewModel : ViewModel() {
     }
 
 
+    private  val connectedornot= MutableLiveData<String>()
+    val tempcall: LiveData<String>
+        get() =connectedornot
+
+    fun checkingCallConntion(databaseReference: DatabaseReference, id:String)
+    {
+        databaseReference.child("callconnect").child(id).child("callconnect").addValueEventListener(
+            object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    var status=snapshot.value.toString()
+                    connectedornot.postValue(status)
+                }
+                override fun onCancelled(error: DatabaseError) {
+                    Log.d("TAG", "onCancelled: "+error.message.toString())
+                }
+            }
+        )
+    }
+
 
 
 
