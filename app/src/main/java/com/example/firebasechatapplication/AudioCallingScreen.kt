@@ -30,10 +30,6 @@ class AudioCallingScreen : AppCompatActivity() {
 
 
 
-
-
-
-
     lateinit var database :DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -100,7 +96,7 @@ class AudioCallingScreen : AppCompatActivity() {
                                         .child("callconnect")
                                         .setValue("connected").addOnCompleteListener {
                                             binding.audiocalluserclient.text="connected"
-                                          // initializeAndJoinChannel()
+                                           initializeAndJoinChannel()
 
                                         }
 
